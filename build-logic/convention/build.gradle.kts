@@ -39,6 +39,7 @@ dependencies {
     compileOnly(libs.firebase.crashlytics.gradlePlugin)
     compileOnly(libs.firebase.performance.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.emulatorwtf.gradlePlugin)
     compileOnly(libs.ksp.gradlePlugin)
 }
 
@@ -95,6 +96,10 @@ gradlePlugin {
         register("jvmLibrary") {
             id = "nowinandroid.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("emulatorwtf") {
+            id = "nowinandroid.android.test.emulatorwtf"
+            implementationClass = "EmulatorWtfConventionPlugin"
         }
     }
 }

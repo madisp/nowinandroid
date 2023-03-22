@@ -19,6 +19,7 @@ plugins {
     id("nowinandroid.android.library.jacoco")
     id("nowinandroid.android.hilt")
     id("nowinandroid.android.room")
+    id("nowinandroid.android.test.emulatorwtf")
 }
 
 android {

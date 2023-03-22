@@ -19,6 +19,8 @@ buildscript {
         google()
         mavenCentral()
 
+        mavenLocal()
+
         // Android Build Server
         maven { url = uri("../nowinandroid-prebuilts/m2repository") }
     }
@@ -40,4 +42,5 @@ plugins {
     alias(libs.plugins.hilt) apply false
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.secrets) apply false
+    alias(libs.plugins.emulatorwtf) apply false
 }

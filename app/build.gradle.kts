@@ -24,6 +24,7 @@ plugins {
     id("jacoco")
     id("nowinandroid.android.application.firebase")
     id("com.google.android.gms.oss-licenses-plugin")
+    id("nowinandroid.android.test.emulatorwtf")
 }
 
 android {
@@ -44,7 +45,7 @@ android {
             applicationIdSuffix = NiaBuildType.DEBUG.applicationIdSuffix
         }
         val release by getting {
-            isMinifyEnabled = true
+//            isMinifyEnabled = true
             applicationIdSuffix = NiaBuildType.RELEASE.applicationIdSuffix
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
 

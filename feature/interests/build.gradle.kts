@@ -18,6 +18,7 @@ plugins {
     id("nowinandroid.android.feature")
     id("nowinandroid.android.library.compose")
     id("nowinandroid.android.library.jacoco")
+    id("nowinandroid.android.test.emulatorwtf")
 }
 android {
     namespace = "com.google.samples.apps.nowinandroid.feature.interests"

@@ -19,6 +19,7 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
     }
 }
@@ -28,6 +29,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://maven.emulator.wtf/releases/") {
+            content { includeGroup("wtf.emulator") }
+        }
+        mavenLocal()
     }
 }
 rootProject.name = "nowinandroid"
