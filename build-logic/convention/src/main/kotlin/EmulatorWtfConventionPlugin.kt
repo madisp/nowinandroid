@@ -27,6 +27,7 @@ class EmulatorWtfConventionPlugin : Plugin<Project> {
             }
 
             with(extensions.getByType<EwExtension>()) {
+                async.set(true)
                 devices.set(listOf(
                     mapOf("model" to "Pixel2", "version" to 29, "gpu" to "auto")
                 ))
